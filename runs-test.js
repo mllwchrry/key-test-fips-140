@@ -10,11 +10,8 @@ function runsTest(key) {
                             (current.length > longest.length ? current : longest),
                             zeroRuns[0]);
     const longestOneRun = oneRuns.reduce((longest, current) =>
-            (current.length > longest.length ? current : longest),
-        oneRuns[0]);
-
-    // console.log('long', longestZeroRun.length);
-    // console.log('long1', longestOneRun.length);
+                            (current.length > longest.length ? current : longest),
+                            oneRuns[0]);
 
     return longestZeroRun.length <= MAX && longestOneRun.length <= MAX;
 }
