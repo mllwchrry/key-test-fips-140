@@ -1,4 +1,5 @@
 const monobitTest = require('./monobit-test');
+const runsTest = require('./runs-test');
 function hexToBinary(hex) {
 
     if (hex.length !== 5000)
@@ -31,3 +32,6 @@ const hex = generateRandomHex(5000);
 // console.log(hex);
 
 console.log(monobitTest(hexToBinary(hex)));
+runsTest(hexToBinary(hex));
+// console.log(runsTest('10000000000000000000000000000000000001110111000000011000000001'));
+
