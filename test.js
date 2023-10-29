@@ -1,6 +1,7 @@
 const monobitTest = require('./monobit-test');
-const runsTest = require('./runs-test');
+const longRunTest = require('./long-run-test');
 const pokerTest = require('./poker-test');
+const runsTest = require('./runs-test');
 function hexToBinary(hex) {
 
     if (hex.length !== 5000)
@@ -33,10 +34,11 @@ const hex = generateRandomHex(5000);
 // console.log(hex);
 
 // console.log(monobitTest(hexToBinary(hex)));
-// runsTest(hexToBinary(hex));
-// console.log(runsTest('10000000000000000000000000000000000001110111000000011000000001'));
+// longRunTest(hexToBinary(hex));
+// console.log(longRunTest('10000000000000000000000000000000000001110111000000011000000001'));
 
-console.log(pokerTest(hexToBinary(hex)))
+// console.log(pokerTest(hexToBinary(hex)))
+console.log(runsTest(hexToBinary(hex)))
 // console.log(pokerTest('10101010000010001000'))
 // console.log(pokerTest('1101101001110101'))
 
