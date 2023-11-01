@@ -42,4 +42,3 @@ function runsTest(key) {
 }
 
 module.exports = runsTest;
-// runsTest('10011000100010101010000001000000100000000100000000001000000000');
